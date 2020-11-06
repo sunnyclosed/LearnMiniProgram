@@ -5,62 +5,76 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    phoneNum: "",
+    captcha: "",
+    phoneNumTips: "",
+    captchaTips: "",
+    isHiddenPhoneNumTips: false,
+    isHiddencaptchaTips: false,
+    getCaptchaText: "获取验证",
+    isAbleCaptchaClick: false,
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  // 手机号输入回调
+  inputPhoneNum(event) {
+    this.data.phoneNum = event.detail.value
+    this.testPhoneNum(this.data.phoneNum)
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  // 验证手机号格式
+  testPhoneNum(num) {
+    if (num.length != 11) {
+      this.setData({ isHiddenPhoneNumTips: false })
+      this.setData({ phoneNumTips: "！手机号必须为11位" })
+    } else if (!/^1[0-9]{10}$/.test(num)) {
+      this.setData({ isHiddenPhoneNumTips: false })
+      this.setData({ phoneNumTips: "！手机号不正确" })
+    } else {
+      this.setData({ isHiddenPhoneNumTips: true })
+      this.setData({ phoneNumTips: "" })
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  // 验证验输入回调
+  inputCaptcha(event) {
+    this.data.captcha = event.detail.value;
+    this.testCaptcha(this.data.captcha);
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  // 验证验证码格式
+  testCaptcha(captcha) {
+    if (captcha.length != 6) {
+      this.setData({ isHiddencaptchaTips: false })
+      this.setData({ captchaTips: "！验证码必须为6位" })
+    } else {
+      this.setData({ isHiddencaptchaTips: true })
+      this.setData({ captchaTips: "" })
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  // 获取验证码
+  getCaptchaClick() {
+    wx.showToast({
+      title: "已发送验证码",
+      icon: 'success',
+      success: () => {
+        let num = 60;
+        this.setData({ isAbleCaptchaClick: true })
+        this.setData({ getCaptchaText: num })
+        const timer = setInterval(() => {
+          num--
+          this.setData({ getCaptchaText: num })
+        }, 1000)
+        setTimeout(() => {
+          this.setData({ isAbleCaptchaClick: false })
+          clearInterval(timer)
+        }, 60000)
+      }
+    })
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  // 登录
+  loginClick() {
+    this.testPhoneNum(this.data.phoneNum)
+    this.testCaptcha(this.data.captcha)
+    if (this.data.isHiddencaptchaTips && this.data.isHiddenPhoneNumTips) {
+      wx.navigateTo({
+        url: '/pages/home/home',
+      })
+    }
   }
 })

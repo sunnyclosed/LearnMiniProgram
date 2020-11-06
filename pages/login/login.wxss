@@ -28,7 +28,7 @@
   background-color: #F4F4F4;
 }
 
-.input_box text {
+.input_box .iconfont {
   position: absolute;
   padding-right: 20rpx;
   top: 28rpx;
@@ -61,6 +61,14 @@
   margin-bottom: 80rpx;
 }
 
+.phone_num_tips, .captcha_tips {
+  position: absolute;
+  top: 110rpx;
+  left: 120rpx;
+  font-size: 30rpx;
+  color: red;
+}
+
 .login_button {
   width: 600rpx;
   height: 100rpx;
@@ -88,16 +96,17 @@
   font-size: 50rpx;
 }
 
-.media_icon_box view{
+.media_icon_box view {
   font-size: 30rpx;
 }
 
-.login_deal{
+.login_deal {
   font-size: 26rpx;
   color: lightgray;
   font-weight: bold;
   margin-top: 200rpx;
 }
-.login_deal text{
+
+.login_deal text {
   text-decoration-line: underline;
 }
