@@ -1,0 +1,103 @@
+/* pages/login/login.wxss */
+#login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 50rpx;
+  margin: 0 0 150rpx 0;
+}
+
+.input_box {
+  position: relative;
+}
+
+.input_box input {
+  padding-left: 120rpx;
+  /* padding-right: 180rpx; */
+  width: 500rpx;
+  height: 100rpx;
+  margin-bottom: 80rpx;
+  border-radius: 100rpx;
+  background-color: #F4F4F4;
+}
+
+.input_box text {
+  position: absolute;
+  padding-right: 20rpx;
+  top: 28rpx;
+  left: 40rpx;
+  font-size: 40rpx;
+  font-weight: 600;
+  border-right: 1px solid lightgray;
+  z-index: 10;
+}
+
+.input_box button {
+  position: absolute;
+  text-align: center;
+  width: 140rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 60rpx;
+  background-color: black;
+  color: white;
+  font-size: 20rpx;
+  top: 20rpx;
+  right: 20rpx;
+  z-index: 10;
+}
+
+.tips_text {
+  font-size: 26rpx;
+  color: lightgray;
+  font-weight: bold;
+  margin-bottom: 80rpx;
+}
+
+.login_button {
+  width: 600rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 100rpx;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 30rpx;
+}
+
+.media_icon {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80rpx;
+}
+
+.media_icon_box {
+  width: 100rpx;
+  text-align: center;
+}
+
+.media_icon_box text {
+  font-size: 50rpx;
+}
+
+.media_icon_box view{
+  font-size: 30rpx;
+}
+
+.login_deal{
+  font-size: 26rpx;
+  color: lightgray;
+  font-weight: bold;
+  margin-top: 200rpx;
+}
+.login_deal text{
+  text-decoration-line: underline;
+}

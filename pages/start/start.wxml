@@ -1,0 +1,15 @@
+<!--pages/start/start.wxml-->
+<view id="start">
+  <image class="bg" src="/assets/images/start/start_bg.jpg" />
+  <view class="content">
+    <view>
+      <text class="iconfont icon-xiangji start_camera"></text>
+    </view>
+    <view>
+      <text>打开生活，发现美好</text>
+    </view>
+    <view class="start_go_box" bind:tap="startClick">
+      <text class="iconfont icon-qianjin start_go_icon"></text>
+    </view>
+  </view>
+</view>

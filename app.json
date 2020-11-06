@@ -1,6 +1,14 @@
 {
   "pages": [
-    "pages/home/home"
+    "pages/login/login",
+    "pages/start/start",
+  
+    "pages/home/home",
+    "pages/detail/detail",
+    "pages/hisworks/hisworks",
+    "pages/mydownload/mydownload",
+    "pages/myfans/myfans",
+    "pages/myfocus/myfocus"
   ],
   "sitemapLocation": "sitemap55.json"
 }
