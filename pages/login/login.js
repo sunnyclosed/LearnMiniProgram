@@ -72,8 +72,8 @@ Page({
     this.testPhoneNum(this.data.phoneNum)
     this.testCaptcha(this.data.captcha)
     if (this.data.isHiddencaptchaTips && this.data.isHiddenPhoneNumTips) {
-      wx.navigateTo({
-        url: '/pages/home/home',
+      wx.switchTab({
+        url: "/pages/home/home"
       })
     }
   }

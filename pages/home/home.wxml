@@ -1,4 +1,40 @@
 <!--pages/home/home.wxml-->
-<text class="title">hello world</text>
-<button size="mini">按钮</button>
-<view></view>
+<view class="search_bar">
+  <view class="search_inputbox">
+    <input type="text" placeholder="搜索热门壁纸" />
+    <text class="iconfont icon-sousuo search_icon"></text>
+  </view>
+  <text class="iconfont icon-shouji search_phone"></text>
+</view>
+<scroll-view class="list_scroll" scroll-y="true">
+  <view class="list">
+    <view class="list_half">
+      <view wx:for="{{list}}" wx:key="index" wx:if="{{index%2 == 0}}" class="list_card" bind:tap="cardClick"
+        data-id="{{item.id}}">
+        <image src="{{item.img}}" class="list_img" mode="widthFix" lazy-load="true" />
+        <view class="list_title">{{item.title}}</view>
+        <view class="list_detail">
+          <text class="list_info">{{item.info}}</text>
+          <view class="list_num">
+            <text class="iconfont icon-xihuan"></text>
+            <text>{{item.num}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="list_half">
+      <view wx:for="{{list}}" wx:key="index" wx:if="{{index%2 == 1}}" class="list_card" bind:tap="cardClick"
+        data-id="{{item.id}}">
+        <image src="{{item.img}}" class="list_img" mode="widthFix" lazy-load="true" />
+        <view class="list_title">{{item.title}}</view>
+        <view class="list_detail">
+          <text class="list_info">{{item.info}}</text>
+          <view class="list_num">
+            <text class="iconfont icon-xihuan"></text>
+            <text>{{item.num}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

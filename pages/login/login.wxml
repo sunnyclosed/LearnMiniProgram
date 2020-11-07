@@ -14,18 +14,21 @@
     <text class="captcha_tips" hidden="{{isHiddencaptchaTips}}">{{captchaTips}}</text>
   </view>
   <view class="tips_text">未注册的手机号验证后自动创建摄图账号</view>
-  <button class="login_button" bind:tap="loginClick">登 录</button>
-  <view class="media_icon">
-    <view class="media_icon_box">
-      <text class="iconfont icon-wechat"></text>
-      <view>微信</view>
+  <view class="login_bottom">
+    <button class="login_button" bind:tap="loginClick">登 录</button>
+    <view class="media_icon">
+      <view class="media_icon_box">
+        <text class="iconfont icon-wechat"></text>
+        <view>微信</view>
+      </view>
+      <view class="media_icon_box">
+        <text class="iconfont icon-qq"></text>
+        <view>QQ</view>
+      </view>
     </view>
-    <view class="media_icon_box">
-      <text class="iconfont icon-qq"></text>
-      <view>QQ</view>
+    <view class="login_deal">登录即同意
+      <text>用户协议</text>
     </view>
   </view>
-  <view class="login_deal">登录即同意
-    <text>用户协议</text>
-  </view>
+
 </view>
