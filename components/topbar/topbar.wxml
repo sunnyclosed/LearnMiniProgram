@@ -4,7 +4,7 @@
     <view class="top-left-title">{{myinfo.name}}</view>
     <view class="top-left-des">{{myinfo.des}}</view>
     <view class="top-left-databox">
-      <fans-data class="top-left-fans" num_obj="{{myinfo.num_obj}}"></fans-data>
+      <fans-data class="top-left-fans" num_obj="{{myinfo.num_obj}}" is_click="{{true}}"></fans-data>
     </view>
   </view>
   <view class="top-right">

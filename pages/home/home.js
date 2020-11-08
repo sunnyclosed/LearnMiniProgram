@@ -7,12 +7,7 @@ Page({
   data: {
     list: []
   },
-  cardClick(e) {
-    const id = e.currentTarget.dataset.id;
-    wx.navigateTo({
-      url: '/pages/others/detail/detail?id=' + id,
-    })
-  },
+ 
   /**
    * 生命周期函数--监听页面加载
    */
@@ -23,6 +18,6 @@ Page({
       this.setData({
         list: app.globalData.workList
       })
-    }, 1000)
+    }, 100)
   }
 })

@@ -1,0 +1,40 @@
+.ditem {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+}
+
+.ditem-left {
+  display: flex;
+  width: 200rpx;
+  height: 200rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.ditem-left-img {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 20rpx;
+  border: 1px solid lightgray;
+}
+
+.ditem-right {
+  flex: 1;
+  display: flex;
+  padding-left: 20rpx;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.ditem-right-title {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.ditem-right-time {
+  font-size: 24rpx;
+  font-weight: bold;
+  color: gray;
+  border-bottom: 1px solid lightgray;
+}

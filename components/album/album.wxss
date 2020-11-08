@@ -19,6 +19,7 @@
 .album .img {
   width: 170rpx;
   height: 170rpx;
+  border: 1px solid lightgray;
 }
 
 .img-lt {

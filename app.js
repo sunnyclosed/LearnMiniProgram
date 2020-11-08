@@ -18,16 +18,16 @@ App({
     detailList: [
       { id: 0, icon: "https://picsum.photos/60/60?random=1", name: "轻舞飞扬", title: "生活需要一杯美好", info: "该剧第一季于2011年12月播出，第二季于2013年2月13日播出，圣诞特辑于2014年12月6日在英国首播。第三季于2016年10月21日开播", dlNum: "667", loveNum: 65, shareNum: 119 },
       { id: 1, icon: "https://picsum.photos/60/60?random=2", name: "指尖萦绕", title: "除了苟且还有远方", info: "《咖啡生活》是2004年 中国妇女出版社出版的图书，作者是柯明川", dlNum: "998", loveNum: 165, shareNum: 2119 },
-      { id: 2, icon: "https://picsum.photos/60/60?random=3", name: "宝宝情已伤", title: "岂因祸福避趋之", info: "上海沦陷后，舒适参加了青鸟剧社，曾演出话剧《雷雨》《日出》、《不夜城》及《大雷雨》等。正式演出时，借用父亲的笔名“舒适”", num: "667", loveNum: 365, shareNum: 3119 },
+      { id: 2, icon: "https://picsum.photos/60/60?random=3", name: "宝宝情已伤", title: "岂因祸福避趋之", info: "上海沦陷后，舒适参加了青鸟剧社，曾演出话剧《雷雨》《日出》、《不夜城》及《大雷雨》等。正式演出时，借用父亲的笔名“舒适”", dlnum: "667", loveNum: 365, shareNum: 3119 },
       { id: 3, icon: "https://picsum.photos/60/60?random=4", name: "找寻飞翔翅膀", title: "社会主义核心价值观", info: "城市也叫城市聚落，一般包括了住宅区、工业区和商业区并且具备行政管辖功能。城市的行政管辖功能可能涉及较其本身更广泛的区域，其中有居民区、街道、医院、学校、公共绿地、写字楼、商业卖场、广场、公园等公共设施", num: "4667", loveNum: 465, shareNum: 1419 },
-      { id: 4, icon: "https://picsum.photos/60/60?random=5", name: "老秦人", title: "在沉默中爆发", info: "一些国家在总统或内阁选举年竞选总统、国会议员的活动", num: "1122", loveNum: 655, shareNum: 1519 },
-      { id: 5, icon: "https://picsum.photos/60/60?random=6", name: "铁拐李", title: "生活需要仪式感", info: "该剧已于2007年5月16日在上海电视剧频道首播", num: "77", loveNum: 665, shareNum: 1169 },
-      { id: 6, icon: "https://picsum.photos/60/60?random=7", name: "花开不败", title: "浅谈早恋危害", info: "人之初，性本善。性相近，习相远", num: "9", loveNum: 675, shareNum: 117 },
-      { id: 7, icon: "https://picsum.photos/60/60?random=8", name: "庄小骗", title: "一帆风顺", info: "无厘头，原是广东广州等地的一句俗话", num: "12", loveNum: 68, shareNum: 1189 },
-      { id: 8, icon: "https://picsum.photos/60/60?random=9", name: "太阳花", title: "得过且过", info: "《诗与远方》为黑岩阅读网签约作者“笑笑苏”原创作品，首发、独家签约于黑岩阅读网", num: "10667", loveNum: 695, shareNum: 1199 },
-      { id: 9, icon: "https://picsum.photos/60/60?random=10", name: "upupup", title: "香港废青", info: "元·马致远《天净沙·秋思》：“夕阳西下，断肠人在天涯", num: "42", loveNum: 650, shareNum: 1109 },
-      { id: 10, icon: "https://picsum.photos/60/60?random=11", name: "挥拳而立", title: "一米阳光", info: "断肠人是电视剧《终极一班》中的人物", num: "860", loveNum: 165, shareNum: 1119 },
-      { id: 11, icon: "https://picsum.photos/60/60?random=12", name: "新人类", title: "午夜惊魂", info: "中国新农村就是建设改善农民衣食住行，主要包括基础设施建设，比如通电，自来水，通车的宽敞的马路，大又舒适的住宅楼等，其他就是农民的生活保障机制，全民纳入社保实现城乡一体化等", num: "1860", loveNum: 625, shareNum: 1192 },
+      { id: 4, icon: "https://picsum.photos/60/60?random=5", name: "老秦人", title: "在沉默中爆发", info: "一些国家在总统或内阁选举年竞选总统、国会议员的活动", dlnum: "1122", loveNum: 655, shareNum: 1519 },
+      { id: 5, icon: "https://picsum.photos/60/60?random=6", name: "铁拐李", title: "生活需要仪式感", info: "该剧已于2007年5月16日在上海电视剧频道首播", dlnum: "77", loveNum: 665, shareNum: 1169 },
+      { id: 6, icon: "https://picsum.photos/60/60?random=7", name: "花开不败", title: "浅谈早恋危害", info: "人之初，性本善。性相近，习相远", dlnum: "9", loveNum: 675, shareNum: 117 },
+      { id: 7, icon: "https://picsum.photos/60/60?random=8", name: "庄小骗", title: "一帆风顺", info: "无厘头，原是广东广州等地的一句俗话", dlnum: "12", loveNum: 68, shareNum: 1189 },
+      { id: 8, icon: "https://picsum.photos/60/60?random=9", name: "太阳花", title: "得过且过", info: "《诗与远方》为黑岩阅读网签约作者“笑笑苏”原创作品，首发、独家签约于黑岩阅读网", dlnum: "10667", loveNum: 695, shareNum: 1199 },
+      { id: 9, icon: "https://picsum.photos/60/60?random=10", name: "upupup", title: "香港废青", info: "元·马致远《天净沙·秋思》：“夕阳西下，断肠人在天涯", dlnum: "42", loveNum: 650, shareNum: 1109 },
+      { id: 10, icon: "https://picsum.photos/60/60?random=11", name: "挥拳而立", title: "一米阳光", info: "断肠人是电视剧《终极一班》中的人物", dlnum: "860", loveNum: 165, shareNum: 1119 },
+      { id: 11, icon: "https://picsum.photos/60/60?random=12", name: "新人类", title: "午夜惊魂", info: "中国新农村就是建设改善农民衣食住行，主要包括基础设施建设，比如通电，自来水，通车的宽敞的马路，大又舒适的住宅楼等，其他就是农民的生活保障机制，全民纳入社保实现城乡一体化等", dlnum: "1860", loveNum: 625, shareNum: 1192 },
     ],
     mydata: {
       info: {
@@ -72,12 +72,39 @@ App({
           des: "不知情的她在18岁成人礼那天后，周围发生了各种诡异的事件，离奇的渗水、怪异的歌音、水鬼、鬼神君总是缠绕着她"
         }
       ],
+      myfans: [
+        { fansid: 0, icon: "https://picsum.photos/60/60?random=301", name: "太酷不给撩", date: "04/20 04:09" },
+        { fansid: 1, icon: "https://picsum.photos/60/60?random=302", name: "我是钢铁侠", date: "04/21 04:09" },
+        { fansid: 2, icon: "https://picsum.photos/60/60?random=303", name: "野猫梁上走", date: "04/22 04:09" },
+        { fansid: 3, icon: "https://picsum.photos/60/60?random=304", name: "魅力本人", date: "04/23 04:09" },
+        { fansid: 4, icon: "https://picsum.photos/60/60?random=305", name: "有杀气的萝莉", date: "04/24 04:09" },
+        { fansid: 5, icon: "https://picsum.photos/60/60?random=306", name: "气质要硬", date: "04/25 04:09" },
+        { fansid: 6, icon: "https://picsum.photos/60/60?random=307", name: "代号戒烟", date: "04/26 04:09" },
+        { fansid: 7, icon: "https://picsum.photos/60/60?random=308", name: "晴天", date: "04/27 04:09" },
+        { fansid: 8, icon: "https://picsum.photos/60/60?random=309", name: "一笑泯恩仇", date: "04/28 04:09" },
+        { fansid: 9, icon: "https://picsum.photos/60/60?random=310", name: "好聚好散", date: "04/19 04:09" },
+        { fansid: 10, icon: "https://picsum.photos/60/60?random=311", name: "单雄信", date: "04/10 04:09" }
+      ],
+      myfocus: [
+        { focusid: 0, icon: "https://picsum.photos/60/60?random=401", name: "太酷不给撩", pnum: 123, fnum: 69801 },
+        { focusid: 1, icon: "https://picsum.photos/60/60?random=402", name: "我是钢铁侠", pnum: 820, fnum: 6918 },
+        { focusid: 2, icon: "https://picsum.photos/60/60?random=403", name: "野猫梁上走", pnum: 830, fnum: 68 },
+        { focusid: 3, icon: "https://picsum.photos/60/60?random=404", name: "魅力本人", pnum: 991, fnum: 8 },
+        { focusid: 4, icon: "https://picsum.photos/60/60?random=405", name: "有杀气的萝莉", pnum: 1023, fnum: 6981 },
+        { focusid: 5, icon: "https://picsum.photos/60/60?random=406", name: "气质要硬", pnum: 666, fnum: 898 },
+        { focusid: 6, icon: "https://picsum.photos/60/60?random=407", name: "代号戒烟", pnum: 801, fnum: 701 },
+        { focusid: 7, icon: "https://picsum.photos/60/60?random=408", name: "晴天", pnum: 12, fnum: 88 },
+        { focusid: 8, icon: "https://picsum.photos/60/60?random=409", name: "一笑泯恩仇", pnum: 7, fnum: 1698 },
+        { focusid: 9, icon: "https://picsum.photos/60/60?random=410", name: "好聚好散", pnum: 90, fnum: 322698 },
+        { focusid: 10, icon: "https://picsum.photos/60/60?random=411", name: "单雄信", pnum: 1180, fnum: 3334698 }
+      ],
     },
     hisdata: {
       info: {
         icon: "https://picsum.photos/60/60?random=112",
         name: "唯以不咏怀",
         des: "找寻飞翔翅膀",
+        isfans: false,
         num_obj: {
           popular_num: 19,
           fans_num: 405,
@@ -117,6 +144,19 @@ App({
         }
       ],
     },
+    historydl: [
+      { hdid: 0, icon: "https://picsum.photos/60/60?random=201", title: "昏暗的阳光", date: "04/21 15:01" },
+      { hdid: 1, icon: "https://picsum.photos/60/60?random=202", title: "纸醉金迷", date: "04/21 15:01" },
+      { hdid: 2, icon: "https://picsum.photos/60/60?random=203", title: "淡定", date: "04/21 15:01" },
+      { hdid: 3, icon: "https://picsum.photos/60/60?random=204", title: "红色高跟鞋", date: "04/21 15:01" },
+      { hdid: 4, icon: "https://picsum.photos/60/60?random=205", title: "童话镇", date: "04/21 15:01" },
+      { hdid: 5, icon: "https://picsum.photos/60/60?random=206", title: "别董大", date: "04/21 15:01" },
+      { hdid: 6, icon: "https://picsum.photos/60/60?random=207", title: "伤仲永", date: "04/21 15:01" },
+      { hdid: 7, icon: "https://picsum.photos/60/60?random=208", title: "天下谁人不识君", date: "04/21 15:01" },
+      { hdid: 8, icon: "https://picsum.photos/60/60?random=209", title: "黄河之水", date: "04/21 15:01" },
+      { hdid: 9, icon: "https://picsum.photos/60/60?random=210", title: "午夜阳光", date: "04/21 15:01" },
+      { hdid: 10, icon: "https://picsum.photos/60/60?random=211", title: "魔法师", date: "04/21 15:01" },
+    ],
     userInfo: ''
   },
   // 小程序启动之后 触发

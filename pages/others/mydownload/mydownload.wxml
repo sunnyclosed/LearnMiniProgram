@@ -1,2 +1,12 @@
 <!--pages/mydownload/mydownload.wxml-->
-<text>pages/mydownload/mydownload.wxml</text>
+<view class="dl">
+  <view class="top">
+    <view>历史下载</view>
+    <text class="iconfont icon-shijian"></text>
+  </view>
+  <scroll-view class="scroll_dl" scroll-y="true">
+    <block wx:for="{{historydl}}" wx:key="hdid">
+      <dl_item dl_item="{{item}}" class="dl-item"/>
+    </block>
+  </scroll-view>
+</view>

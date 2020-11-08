@@ -1,0 +1,17 @@
+<block wx:for="{{focuslist}}" wx:key="focusid">
+  <view class="focus-item">
+    <view class="focus-item-left">
+      <image class="focus-item-left-img" src="{{item.icon}}" mode="full" />
+    </view>
+    <view class="focus-item-center">
+      <view class="focus-item-center-title">{{item.name}}</view>
+      <view class="focus-item-center-info">
+        <text class="focus-item-center-info-pnum">作品:{{item.pnum}}</text>
+        <text>粉丝:{{item.fnum}}</text>
+      </view>
+    </view>
+    <view class="focus-item-right">
+      <text class="iconfont icon-xihuan focus-item-right-icon"></text>
+    </view>
+  </view>
+</block>

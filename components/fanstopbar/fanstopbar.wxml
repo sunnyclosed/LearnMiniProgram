@@ -1,0 +1,4 @@
+<view class="top">
+  {{title}}
+  <text bind:tap="backClick" class="iconfont icon-ai207 top-back"></text>
+</view>

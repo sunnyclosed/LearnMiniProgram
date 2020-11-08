@@ -1,6 +1,6 @@
 <!--components/iconbar/iconbar.wxml-->
 <view class="center-iconbar">
-  <view class="center-iconbar-iconbox">
+  <view class="center-iconbar-iconbox" bind:tap="dlHistoryClick">
     <text class="iconfont icon-xiazai iconbox-text"></text>
     <view class="iconbox-view">历史下载</view>
   </view>

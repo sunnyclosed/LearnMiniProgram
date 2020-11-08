@@ -1,1 +1,115 @@
 /* pages/hisworks/hisworks.wxss */
+.hiswork {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #131313;
+}
+
+.top {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+}
+
+.top-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150rpx;
+  height: 100%;
+}
+
+.top-left image {
+  width: 120rpx;
+  height: 120rpx;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.top-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+  justify-content: space-evenly;
+}
+
+.top-center-name {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: white;
+}
+
+.top-center-des {
+  font-size: 24rpx;
+  color: gray;
+  font-weight: bold;
+}
+
+.top-right {
+  width: 240rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top-right text {
+  display: block;
+  text-align: center;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 40rpx;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  background-color: lightgray;
+}
+
+.scroll_hiswork {
+  width: 100%;
+  height: calc(100% - 200rpx);
+  border-top-left-radius: 60rpx;
+  border-top-right-radius: 60rpx;
+  background-color: white;
+  overflow: hidden;
+}
+
+.center {
+  display: flex;
+  height: 150rpx;
+  padding: 0 20rpx;
+}
+
+.center-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.center-box text {
+  display: block;
+  width: 150rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: black;
+  color: white;
+  font-size: 24rpx;
+  font-weight: bold;
+  border-radius: 60rpx;
+  text-align: center;
+}
+
+.center-fansdata {
+  flex: 1;
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* 允许换行 */
+  flex-wrap: wrap;
+}

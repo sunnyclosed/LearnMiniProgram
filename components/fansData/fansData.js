@@ -7,6 +7,10 @@ Component({
     num_obj: {
       type: Object,
       value: {}
+    },
+    is_click: {
+      type: Boolean,
+      value: false
     }
   },
 
@@ -21,6 +25,15 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    fansClick() {
+      wx.navigateTo({
+        url: '/pages/others/myfans/myfans',
+      })
+    },
+    focusClick() {
+      wx.navigateTo({
+        url: '/pages/others/myfocus/myfocus',
+      })
+    }
   }
 })

@@ -1,0 +1,14 @@
+<block wx:for="{{fanslist}}" wx:key="fansid">
+  <view class="fans-item">
+    <view class="fans-item-left">
+      <image class="fans-item-left-img" src="{{item.icon}}" mode="full" />
+    </view>
+    <view class="fans-item-center">
+      <view class="fans-item-center-title">{{item.name}}</view>
+      <view class="fans-item-center-info">关注了你</view>
+    </view>
+    <view class="fans-item-right">
+      <text class="fans-item-right-date">{{item.date}}</text>
+    </view>
+  </view>
+</block>

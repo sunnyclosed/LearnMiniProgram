@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "fans_data": "/components/fansData/fansData",
+    "album": "/components/album/album"
+  }
 }

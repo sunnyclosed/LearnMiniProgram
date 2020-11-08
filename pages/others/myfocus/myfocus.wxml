@@ -1,2 +1,6 @@
-<!--pages/myfocus/myfocus.wxml-->
-<text>pages/myfocus/myfocus.wxml</text>
+<view class="myfocus">
+  <focus-topbar title="我关注的" />
+  <scroll-view class="scroll-myfocus" scroll-y="true">
+    <focuslist focuslist="{{focuslist}}" />
+  </scroll-view>
+</view>

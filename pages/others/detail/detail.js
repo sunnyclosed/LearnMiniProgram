@@ -34,7 +34,7 @@ Page({
       })
     }
   },
-  hisWorkClick(){
+  hisWorkClick() {
     wx.navigateTo({
       url: '/pages/others/hisworks/hisworks',
     })
@@ -73,7 +73,7 @@ Page({
       this.setData({
         detailList: appDetailList[this.data.id]
       })
-    }, 1000);
+    }, 100);
   },
   getMoveHeight() {
     const obj = wx.createSelectorQuery();

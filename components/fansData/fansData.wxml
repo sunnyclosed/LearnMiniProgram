@@ -4,11 +4,11 @@
     <view class="box-num">{{num_obj.popular_num}}</view>
     <view class="box-text">人气</view>
   </view>
-  <view class="bar-box">
+  <view class="bar-box" bind:tap="fansClick">
     <view class="box-num">{{num_obj.fans_num}}</view>
     <view class="box-text">粉丝</view>
   </view>
-  <view class="bar-box">
+  <view class="bar-box" bind:tap="focusClick">
     <view class="box-num">{{num_obj.focus_num}}</view>
     <view class="box-text">关注</view>
   </view>

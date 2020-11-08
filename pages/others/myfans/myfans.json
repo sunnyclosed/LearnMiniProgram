@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "fanslist": "/components/fanslist/fanslist",
+    "fans-topbar": "/components/fanstopbar/fanstopbar"
+  }
 }

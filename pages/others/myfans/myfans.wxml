@@ -1,2 +1,6 @@
-<!--pages/myfans/myfans.wxml-->
-<text>pages/myfans/myfans.wxml</text>
+<view class="myfans">
+  <fans-topbar title="我的粉丝" />
+  <scroll-view class="scroll-myfans" scroll-y="true">
+    <fanslist fanslist="{{fanslist}}" />
+  </scroll-view>
+</view>

@@ -1,2 +1,29 @@
 <!--pages/hisworks/hisworks.wxml-->
-<text>pages/hisworks/hisworks.wxml</text>
+<view class="hiswork">
+  <view class="top">
+    <view class="top-left">
+      <image src="{{hisdata.info.icon}}" mode="full" />
+    </view>
+    <view class="top-center">
+      <view class="top-center-name">{{hisdata.info.name}}</view>
+      <view class="top-center-des">{{hisdata.info.des}}</view>
+    </view>
+    <view class="top-right">
+      <text class="iconfont icon-xihuan top-right-fans"></text>
+      <text class="iconfont icon-xiaoxi top-right-message"></text>
+    </view>
+  </view>
+  <scroll-view class="scroll_hiswork" scroll-y="true">
+    <view class="center">
+      <view class="center-box">
+        <text>他的作品</text>
+      </view>
+      <fans_data class="center-fansdata" num_obj="{{hisdata.info.num_obj}}"></fans_data>
+    </view>
+    <view class="bottom">
+      <view wx:for="{{hisdata.album}}" wx:key="pid">
+        <album albumitem="{{item}}"></album>
+      </view>
+    </view>
+  </scroll-view>
+</view>

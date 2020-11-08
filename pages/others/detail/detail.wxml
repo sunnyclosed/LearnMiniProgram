@@ -1,4 +1,3 @@
-<!--pages/detail/detail.wxml-->
 <view class="detail">
   <image class="bg" src="https://picsum.photos/360/360?random=1" mode="aspectFill" />
   <view class="detail_info" animation="{{detail_move}}">

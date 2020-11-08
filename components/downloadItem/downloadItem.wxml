@@ -1,0 +1,9 @@
+<view class="ditem">
+  <view class="ditem-left">
+    <image class="ditem-left-img" src="{{dl_item.icon}}" mode="full" />
+  </view>
+  <view class="ditem-right">
+    <view class="ditem-right-title">{{dl_item.title}}</view>
+    <text class="ditem-right-time">下载时间: {{dl_item.date}}</text>
+  </view>
+</view>

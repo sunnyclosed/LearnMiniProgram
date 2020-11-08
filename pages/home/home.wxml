@@ -7,34 +7,5 @@
   <text class="iconfont icon-shouji search_phone"></text>
 </view>
 <scroll-view class="list_scroll" scroll-y="true">
-  <view class="list">
-    <view class="list_half">
-      <view wx:for="{{list}}" wx:key="index" wx:if="{{index%2 == 0}}" class="list_card" bind:tap="cardClick"
-        data-id="{{item.id}}">
-        <image src="{{item.img}}" class="list_img" mode="widthFix" lazy-load="true" />
-        <view class="list_title">{{item.title}}</view>
-        <view class="list_detail">
-          <text class="list_info">{{item.info}}</text>
-          <view class="list_num">
-            <text class="iconfont icon-xihuan"></text>
-            <text>{{item.num}}</text>
-          </view>
-        </view>
-      </view>
-    </view>
-    <view class="list_half">
-      <view wx:for="{{list}}" wx:key="index" wx:if="{{index%2 == 1}}" class="list_card" bind:tap="cardClick"
-        data-id="{{item.id}}">
-        <image src="{{item.img}}" class="list_img" mode="widthFix" lazy-load="true" />
-        <view class="list_title">{{item.title}}</view>
-        <view class="list_detail">
-          <text class="list_info">{{item.info}}</text>
-          <view class="list_num">
-            <text class="iconfont icon-xihuan"></text>
-            <text>{{item.num}}</text>
-          </view>
-        </view>
-      </view>
-    </view>
-  </view>
+    <waterfall list="{{list}}"/>
 </scroll-view>

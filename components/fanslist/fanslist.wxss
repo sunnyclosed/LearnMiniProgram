@@ -1,0 +1,61 @@
+@import "/assets/iconfont/style.wxss";
+
+.fans-item {
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+}
+
+.fans-item-left {
+  width: 160rpx;
+  height: 160rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fans-item-left-img {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+}
+
+.fans-item-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 160rpx;
+  padding-left: 30rpx;
+  border-bottom: 1px solid lightgray;
+}
+
+.fans-item-center-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.fans-item-center-info {
+  font-size: 24rpx;
+  color: gray;
+  font-weight: bold;
+}
+
+.fans-item-right {
+  height: 160rpx;
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+.fans-item-right-date {
+  margin-top: 30rpx;
+  text-align: center;
+  width: 200rpx;
+  font-size: 24rpx;
+  color: gray;
+  font-weight: bold;
+}

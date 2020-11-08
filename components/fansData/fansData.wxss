@@ -9,6 +9,7 @@
 
 .bar-box {
   text-align: center;
+  width: 120rpx;
 }
 
 .box-num {
