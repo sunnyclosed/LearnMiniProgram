@@ -48,12 +48,18 @@ Page({
     detailMoveHeight: 0,
     // 是否已粉
     isFans: false,
+    info_display: "none"
   },
   onLoad: function (options) {
-    // 获取初始数据
-    this.initData(options.id)
     // 初始化detail_info收缩的距离
     this.getMoveHeight()
+    // 获取初始数据
+    this.initData(options.id)
+  },
+  onReady: function () {
+    this.setData({
+      info_display: "flex"
+    })
   },
 
   /* 
@@ -80,7 +86,7 @@ Page({
     obj.select('.detail_info_btn_box').boundingClientRect();
     obj.exec(function (rect) {
       _this.setData({
-        detailMoveHeight: (rect[0].height - rect[1].height).toFixed(0)
+        detailMoveHeight: (rect[0].height - rect[1].height).toFixed(0),
       })
     });
   }

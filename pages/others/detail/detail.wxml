@@ -1,6 +1,6 @@
 <view class="detail">
   <image class="bg" src="https://picsum.photos/360/360?random=1" mode="aspectFill" />
-  <view class="detail_info" animation="{{detail_move}}" style="bottom:{{-detailMoveHeight}}px">
+  <view class="detail_info" animation="{{detail_move}}" style="bottom:{{-detailMoveHeight}}px;">
     <view class="detail_info_btn_box" bind:tap="detailMoveClick">
       <text class="iconfont {{isDetailOpen?'icon-shouqi1':'icon-shouqi'}}"></text>
     </view>

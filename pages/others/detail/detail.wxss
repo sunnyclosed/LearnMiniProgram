@@ -16,7 +16,7 @@
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -2000rpx;
   background-color: white;
   height: 75%;
   border-top-left-radius: 30rpx;

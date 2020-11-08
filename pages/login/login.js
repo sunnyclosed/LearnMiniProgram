@@ -61,7 +61,10 @@ Page({
           this.setData({ getCaptchaText: num })
         }, 1000)
         setTimeout(() => {
-          this.setData({ isAbleCaptchaClick: false })
+          this.setData({
+            isAbleCaptchaClick: false,
+            getCaptchaText: "获取验证"
+          })
           clearInterval(timer)
         }, 60000)
       }
