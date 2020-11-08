@@ -6,7 +6,7 @@ Page({
     if (time) {
       time = 1000
     }
-    const ani_move = wx.createAnimation({
+    let ani_move = wx.createAnimation({
       delay: 0,
       duration: time,
       timingFunction: 'ease',
@@ -17,12 +17,14 @@ Page({
         detail_move: ani_move.export(),
         isDetailOpen: false
       })
+      console.log("关闭")
     } else {
       ani_move.bottom(0).step()
       this.setData({
         detail_move: ani_move.export(),
         isDetailOpen: true
       })
+      console.log("打开")
     }
   },
   loveClick() {
@@ -32,13 +34,18 @@ Page({
       })
     }
   },
+  hisWorkClick(){
+    wx.navigateTo({
+      url: '/pages/others/hisworks/hisworks',
+    })
+  },
   /* 
   原生函数
    */
   data: {
     id: 0,
     detailList: [],
-    // detail是否展开
+    // detail是否已展开
     isDetailOpen: true,
     detailMoveHeight: 0,
     // 是否已粉
@@ -49,10 +56,6 @@ Page({
     this.initData(options.id)
     // 初始化detail_info收缩的距离
     this.getMoveHeight()
-  },
-  onReady: function () {
-    // 初始对detail_info进行收缩
-    this.detailMoveClick(0)
   },
 
   /* 
@@ -81,7 +84,6 @@ Page({
       _this.setData({
         detailMoveHeight: (rect[0].height - rect[1].height).toFixed(0)
       })
-      console.log(_this.data.detailMoveHeight)
     });
   }
 })

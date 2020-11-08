@@ -1,0 +1,24 @@
+/* components/iconbar/iconbar.wxss */
+@import "/assets/iconfont/style.wxss";
+
+.center-iconbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.center-iconbar-iconbox {
+  text-align: center;
+}
+
+.center-iconbar-iconbox .iconbox-text {
+  display: block;
+  font-weight: bold;
+  font-size: 50rpx;
+  margin-bottom: 10rpx;
+}
+
+.center-iconbar-iconbox .iconbox-view {
+  font-size: 24rpx;
+  color: darkgray;
+  font-weight: bold;
+}

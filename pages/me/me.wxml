@@ -1,2 +1,18 @@
 <!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<view id="me">
+  <topbar myinfo="{{mydata.info}}"></topbar>
+  <scroll-view class="scroll_me" scroll-y="true">
+    <view class="center">
+      <iconbar></iconbar>
+      <view class="center-othericon">
+        <view>我的作品</view>
+        <text class="iconfont icon-tianjia"></text>
+      </view>
+    </view>
+    <view class="bottom">
+      <view wx:for="{{mydata.album}}" wx:key="pid">
+        <album albumitem="{{item}}"></album>
+      </view>
+    </view>
+  </scroll-view>
+</view>

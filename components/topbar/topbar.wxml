@@ -1,0 +1,14 @@
+<!--components/topbar/topbar.wxml-->
+<view class="top">
+  <view class="top-left">
+    <view class="top-left-title">{{myinfo.name}}</view>
+    <view class="top-left-des">{{myinfo.des}}</view>
+    <view class="top-left-databox">
+      <fans-data class="top-left-fans" num_obj="{{myinfo.num_obj}}"></fans-data>
+    </view>
+  </view>
+  <view class="top-right">
+    <image src="{{myinfo.icon}}" class="top-right-img"></image>
+    <text class="iconfont icon-bianji top-right-text"></text>
+  </view>
+</view>

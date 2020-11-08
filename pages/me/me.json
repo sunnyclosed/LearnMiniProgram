@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "topbar": "/components/topbar/topbar",
+    "album": "/components/album/album",
+    "iconbar": "/components/iconbar/iconbar"
+  }
 }

@@ -1,0 +1,13 @@
+<!--components/album/album.wxml-->
+<view class="album">
+  <view class="album_photo">
+    <image src="{{albumitem.photos[0]}}" class="img img-lt" mode="full" />
+    <image src="{{albumitem.photos[1]}}" class="img img-rt" mode="full" />
+    <image src="{{albumitem.photos[2]}}" class="img img-lb" mode="full" />
+    <image src="{{albumitem.photos[3]}}" class="img img-rb" mode="full" />
+  </view>
+  <view class="album-info">
+    <view class="info-title">{{albumitem.title}}</view>
+    <view class="info-des">{{albumitem.des}}</view>
+  </view>
+</view>

@@ -8,7 +8,7 @@
     <view class="info_author">
       <image src="{{detailList.icon}}" />
       <text>{{detailList.name}}</text>
-      <button>他的作品</button>
+      <button bind:tap="hisWorkClick">他的作品</button>
     </view>
     <view class="info_title">{{detailList.title}}</view>
     <scroll-view class="info_scroll" scroll-y="true">
@@ -27,7 +27,6 @@
         <text class="iconfont icon-fenxiang other_icon"></text>
         <text class="other_num">{{detailList.shareNum}}</text>
       </view>
-
     </view>
     <view class="info_dl">
       <view class="icon_box" bind:tap="loveClick" style="{{isFans?'background:orange':''}}">

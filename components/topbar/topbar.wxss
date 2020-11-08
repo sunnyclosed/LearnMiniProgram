@@ -1,0 +1,63 @@
+@import "/assets/iconfont/style.wxss";
+.top {
+  height: 260rpx;
+  background-color: lightgray;
+  border-bottom-left-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+  display: flex;
+  padding: 40rpx 30rpx 0 30rpx;
+}
+
+.top-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-left-title {
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+.top-left-des {
+  color: gray;
+  font-size: 28rpx;
+  /*强制span不换行*/
+  white-space: nowrap;
+  overflow: hidden;
+  /*超出部分以点号代替*/
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 440rpx;
+  margin: 20rpx 0 30rpx 0;
+}
+
+.top-left-databox {
+  width: 440rpx;
+  flex: 1;
+  margin-bottom: 20rpx;
+}
+
+.top-right {
+  position: relative;
+  width: 240rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.top-right .top-right-img {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+
+.top-right .top-right-text {
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  left: 150rpx;
+  top: 110rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+}

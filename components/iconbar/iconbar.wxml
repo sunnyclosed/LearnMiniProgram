@@ -1,0 +1,19 @@
+<!--components/iconbar/iconbar.wxml-->
+<view class="center-iconbar">
+  <view class="center-iconbar-iconbox">
+    <text class="iconfont icon-xiazai iconbox-text"></text>
+    <view class="iconbox-view">历史下载</view>
+  </view>
+  <view class="center-iconbar-iconbox">
+    <text class="iconfont icon-shenhe iconbox-text"></text>
+    <view class="iconbox-view">审核进度</view>
+  </view>
+  <view class="center-iconbar-iconbox">
+    <text class="iconfont icon-icon_fankui iconbox-text"></text>
+    <view class="iconbox-view">帮助反馈</view>
+  </view>
+  <view class="center-iconbar-iconbox">
+    <text class="iconfont icon-shezhi iconbox-text"></text>
+    <view class="iconbox-view">设置中心</view>
+  </view>
+</view>
