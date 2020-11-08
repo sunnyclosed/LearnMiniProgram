@@ -17,14 +17,12 @@ Page({
         detail_move: ani_move.export(),
         isDetailOpen: false
       })
-      console.log("关闭")
     } else {
       ani_move.bottom(0).step()
       this.setData({
         detail_move: ani_move.export(),
         isDetailOpen: true
       })
-      console.log("打开")
     }
   },
   loveClick() {
@@ -46,7 +44,7 @@ Page({
     id: 0,
     detailList: [],
     // detail是否已展开
-    isDetailOpen: true,
+    isDetailOpen: false,
     detailMoveHeight: 0,
     // 是否已粉
     isFans: false,
