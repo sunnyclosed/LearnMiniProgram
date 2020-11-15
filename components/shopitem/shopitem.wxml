@@ -1,0 +1,13 @@
+<view class="item">
+  <view class="item-box">
+    <view class="item-left">
+      <image class="item-left-image" src="{{shop.icon}}" />
+    </view>
+    <view class="item-right">
+      <view class="item-right-name">{{shop.name}}</view>
+      <view class="item-right-addr">{{shop.addr}}</view>
+      <view class="item-right-distance">{{dis}}</view>
+      <view class="item-right-btn" bindtap="showMapClick">立即查看</view>
+    </view>
+  </view>
+</view>

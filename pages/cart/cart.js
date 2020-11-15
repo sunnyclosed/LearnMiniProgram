@@ -1,66 +1,101 @@
-// pages/cart/cart.js
+import { getDistancen } from "../../tools/jstools.js"
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    latitude: 0,
+    longitude: 0,
+    hislatitude: 30.706277,
+    hislongitude: 111.316233,
+    mylatitude: 0,
+    mylongitude: 0,
+    scale: 18,
+    markers: [
+      {
+        latitude: 30.706277,
+        longitude: 111.316233,
+        iconPath: "/assets/images/map/icon.png",
+        width: 30,
+        height: 30,
+        callout: {
+          content: "目标位置",
+          color: "red",
+          fontSize: 16,
+          borderRadius: 5,
+          borderWidth: 1,
+          borderColor: "#0000ff",
+          padding: 2,
+          display: "ALWAYS"
+        }
+      },
+    ]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  navClick() {
+    let _this = this
+    wx.openLocation({
+      latitude: _this.data.hislatitude,
+      longitude: _this.data.hislongitude,
+      scale: 18
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  pathClick() {
+    let _this = this
+    let plugin = requirePlugin('routePlan');
+    let key = 'LFJBZ-SARKV-CO6PK-UPZ5C-PXAM5-M5BFS';  //使用在腾讯位置服务申请的key
+    let referer = '晒衣服miniprogram';   //调用插件的小程序的名称
+    let startPoint = JSON.stringify({  //起点
+      'name': '我的位置',
+      'latitude': _this.data.mylatitude,
+      'longitude': _this.data.mylongitude
+    });
+    let endPoint = JSON.stringify({  //终点
+      'name': '水悦城',
+      'latitude': _this.data.hislatitude,
+      'longitude': _this.data.hislongitude
+    });
+    wx.navigateTo({
+      url: 'plugin://routePlan/route-plan?key=' + key + '&referer=' + referer + '&endPoint=' + endPoint
+    });
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  distanceClick() {
+    let _this = this.data
+    let d = getDistancen(_this.mylatitude, _this.mylongitude, _this.hislatitude, _this.hislongitude)
+    console.log(d)
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  showAllPoints() {
+    let _this = this
+    let mapCtx = wx.createMapContext('my-map')
+    // 使用 wx.createMapContext 获取 map 上下文
+    mapCtx.includePoints({
+      paading: [100, 20, 300, 20],
+      points: [
+        {
+          latitude: _this.data.mylatitude,
+          longitude: _this.data.mylongitude,
+        },
+        {
+          latitude: _this.data.hislatitude,
+          longitude: _this.data.hislongitude
+        }
+      ]
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  onLoad: function () {
+    let _this = this
+    _this.setData({
+      latitude: _this.data.hislatitude,
+      longitude: _this.data.hislongitude
+    })
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onReady: function (e) {
+    let _this = this
+    // 获取当前位置
+    wx.getLocation({
+      type: "gcj02",
+      success: function (res) {
+        _this.setData({
+          mylatitude: res.latitude,
+          mylongitude: res.longitude,
+        })
+      }
+    })
   }
 })

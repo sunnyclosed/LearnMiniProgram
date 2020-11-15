@@ -1,0 +1,9 @@
+<view class="map-container">
+  <map class='my-map' longitude='{{hisLon}}' latitude='{{hisLat}}' scale='{{scale}}' markers='{{markers}}'
+    show-location>
+  </map>
+  <view class="button-list">
+    <button class="btn btn-path" bindtap="pathClick">路线规划</button>
+    <button class="btn btn-nav" bindtap="navClick">导航</button>
+  </view>
+</view>

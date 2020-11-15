@@ -1,2 +1,7 @@
-<!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<view id="category">
+  <scroll-view class="scroll-cate" scroll-y="true">
+    <block wx:for="{{shopData}}" wx:key="id">
+      <shopitem dis="{{distance[index]}}" shop="{{item}}"></shopitem>
+    </block>
+  </scroll-view>
+</view>
